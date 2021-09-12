@@ -1,0 +1,14 @@
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    cursor: move;
+
+    th, td {
+        &.truncated {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap !important;
+          }
+    }
+}

@@ -1,0 +1,28 @@
+@import './variables.scss';
+
+thead {
+  tr {
+    th {
+      padding: .5rem;
+      text-align: left;
+      background-color: LightGray;
+      color: white;
+      position: relative;
+
+      div.draggable {
+        /* Displayed at the right side of column */
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 5px;
+        cursor: ew-resize;
+        user-select: none;
+        height: 100%;
+
+        &:hover {
+            border-right: 2px solid blue;
+        }
+      }
+    }
+  }
+}
